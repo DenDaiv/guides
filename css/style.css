@@ -5,25 +5,27 @@ body {
   color: #f0f0f0;
   line-height: 1.6;
 }
-.app {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  min-height: 100vh;
-}
+.app { display:grid; grid-template-columns:260px 1fr; min-height:100vh; }
 .sidebar {
   background: linear-gradient(180deg,#14183d,#0c0f27);
   padding: 20px;
 }
-.sidebar h1 { font-size: 20px; margin-bottom: 4px; }
-.sidebar p { font-size: 12px; color: #888; margin-bottom: 16px; }
+.sidebar h1 { font-size:20px; margin-bottom:4px; }
+.sidebar p { font-size:12px; color:#888; margin-bottom:16px; }
 .sidebar nav button {
-  width: 100%; padding: 12px;
-  margin-bottom: 10px; border:none; border-radius:10px;
-  background: #1a1f44; color:#fff; cursor:pointer;
+  width:100%; padding:12px; margin-bottom:10px;
+  border:none; border-radius:10px;
+  background:#1a1f44; color:#fff; cursor:pointer;
   transition:.2s;
 }
 .sidebar nav button:hover { background:#3b44ff; }
-.page { padding: 30px; }
+#searchInput {
+  width:100%; padding:10px; margin-bottom:16px;
+  border-radius:8px; border:1px solid #444;
+  background:#1a1f44; color:#fff;
+}
+#searchInput::placeholder { color:#888; }
+.page { padding:30px; }
 .page h2 { font-size:28px; margin-bottom:15px; color:#6c7bff; }
 .card {
   background: linear-gradient(180deg,#1e2140,#161a44);
