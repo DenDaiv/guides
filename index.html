@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Game Guides Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sidebar.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/pages.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Guides Hub</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <div class="app">
-
-  <!-- SIDEBAR -->
   <aside class="sidebar">
-    <h1>🎮 Game Guides</h1>
+    <h1>🎮 Game Guides Hub</h1>
+    <p>Лучшие гайды по Roblox и другим играм</p>
+
+    <!-- Поиск -->
+    <input type="text" id="searchInput" placeholder="Поиск гайдов..." />
+
     <nav>
       <button data-page="home">Главная</button>
       <button data-page="roblox">Roblox</button>
@@ -28,14 +26,8 @@
     </nav>
   </aside>
 
-  <!-- CONTENT -->
   <main id="content"></main>
-
 </div>
-
-<script src="js/navigation.js"></script>
-<script src="js/search.js"></script>
 <script src="js/app.js"></script>
-
 </body>
 </html>
